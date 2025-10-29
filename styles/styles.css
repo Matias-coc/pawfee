@@ -16,6 +16,8 @@
 
 /* fin de reset */
 
+/* inicio header */
+
 .header.header,conteiner-fluid{
     height: 18vh;
     margin: 10px;
@@ -32,7 +34,20 @@
     padding: 0;
     margin: 0;
     height: auto;
+    width: auto;
 }
 .col-4{
     height: auto;
 }
+
+/*fin de header*/
+
+/*inicio main*/
+
+.main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(3, 33%);
+}
+
+/*fin de main*/
