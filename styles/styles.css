@@ -25,6 +25,8 @@
     align-items: center;
     height: 18vh;
     width: 100%;
+    /* position: sticky;
+    top: 0; */
 }
 .card{
     height: 14vh;
@@ -42,14 +44,16 @@
 }
 
 .navbar-nav{
-    display: flex;
     gap: 10px;
 }
 
-/* ul{
-    display: flex;
-    gap: 20px;
-} */
+.navbar-nav li{
+    padding: 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: coral;
+
+}
 
 a.nav-link{
     display: flex;
@@ -136,7 +140,7 @@ a.nav-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    list-style: none;
 }
 
 a:link,a:visited{
