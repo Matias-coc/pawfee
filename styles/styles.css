@@ -19,27 +19,47 @@
 /* inicio header */
 
 .header,conteiner-fluid{
-    height: 18vh;
     margin: 10px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    height: 18vh;
+    width: 100%;
 }
 .card{
-    height: 10rem;
-    width: 10rem;
+    height: 14vh;
+    width: auto;
     padding: 0;
     display: flex;
     justify-content: start;
 }
 
-.col-6{
+.col-7{
     padding: 0;
     margin: 0;
-    height: auto;
+    height: 8vh;
     width: auto;
 }
-.col-4{
+
+.navbar-nav{
+    display: flex;
+    gap: 10px;
+}
+
+/* ul{
+    display: flex;
+    gap: 20px;
+} */
+
+a.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.col-3{
     height: auto;
 }
 
@@ -97,12 +117,14 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    
 }
 
 .der{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
 .au{
     display: flex;
