@@ -136,17 +136,24 @@ a.nav-link{
     justify-content: center;
 }
 .redes{
-    height: 3vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
+    gap: 20px;
 }
 
-a:link,a:visited{
-    text-decoration: none;
-    text-transform: none;
-    text-decoration-style: none;
+.redes li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.logo-redes{
+    height: 50px;
+    width: 50px;
+}
+
 
 /*fin de footer*/
