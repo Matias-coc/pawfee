@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body class="body__menu">
     <header class="header container-fluid">
         <div class="row d-flex justify-content-around align-items-center">
             <a class="col-1 navbar-brand d-flex align-items-center" href="../index.html">
@@ -45,20 +45,129 @@
         </div>
     </header>
 
-        <footer class="footer"> 
+    <main class="main__menu">
+        <section class="menu">
+            <h2 class="menu__h2">Menú Pawffee</h2>
 
-        <h2>Derechos reservados de autor</h2>
-        <h2>Creado por Mati</h2>
+            <p class="menu__p">Cada delicia tiene su precio en <span class="coins">Michicoins</span></p>
 
-        <ul>
+            <div class="menu__items">
+                <!-- cafetería -->
+                <div class="items__cafes">
+                    <div class="cafe__esp">
+                        <img class="menu__img" src="../assets/cafes.png" alt="cafe">
+                        <h3 class="cafe__h3">Latte Ronroneo</h3>
+                        <p class="cafe__des">Suave y espumoso, preparado con leche vaporizada y amor felino. Ideal para empezar el día con un “miau” de energía.</p>
+                    </div>
+                    <div class="cafe__esp">
+                        <img class="menu__img" src="../assets/cafes.png" alt="cafe">
+                        <h3 class="cafe__h3">Cappurrccino</h3>
+                        <p class="cafe__des">Nuestro cappuccino estrella, con espuma tan cremosa que dan ganas de hacerle caricias.</p>
+                    </div>
+                    <div class="cafe__esp 3">
+                        <img class="menu__img" src="../assets/cafes.png" alt="cafe">
+                        <h3 class="cafe__h3">Miauccino Caramelo</h3>
+                        <p class="cafe__des">Café con leche y un toque de caramelo derretido. Dulce como un gatito en una caja.</p>
+                    </div>
+                    <div class="cafe__esp">
+                        <img class="menu__img" src="../assets/cafes.png" alt="cafe">
+                        <h3 class="cafe__h3">Espurrsso</h3>
+                        <p class="cafe__des">Un espresso intenso que despierta hasta al gato más dormilón.</p>
+                    </div>
+                    <div class="cafe__esp">
+                        <img class="menu__img" src="../assets/cafes.png" alt="cafe">
+                        <h3 class="cafe__h3">Frappé Bigotes</h3>
+                        <p class="cafe__des">Café frío batido con crema y virutas de chocolate. Refrescante y juguetón.</p>
+                    </div>
+                    <div class="cafe__esp">
+                        <img class="menu__img" src="../assets/cafes.png" alt="cafe">
+                        <h3 class="cafe__h3">Latte Nube de Gato</h3>
+                        <p class="cafe__des">Latte con espuma artística y malvaviscos en forma de huellitas. ¡Parece una siesta en el cielo!</p>
+                    </div>
+                </div>
+                <!-- panadería -->
+                <div class="items__pan">
+                    <div class="pan">
+                        <img class="menu__img" src="../assets/pan.png" alt="panaderia">
+                        <h3 class="pan__h3">Muffin Bigotitos</h3>
+                        <p class="pan__des">Esponjoso muffin de vainilla con chispas de chocolate y decorado con mini huellitas.</p>
+                    </div>
+                    <div class="pan">
+                        <img class="menu__img" src="../assets/pan.png" alt="panaderia">
+                        <h3 class="pan__h3">Tarta Ronronera</h3>
+                        <p class="pan__des">Base de galleta y crema de queso con salsa de frutos rojos. Suave como un manto de gato persa.</p>
+                    </div>
+                    <div class="pan">
+                        <img class="menu__img" src="../assets/pan.png" alt="panaderia">
+                        <h3 class="pan__h3">Galletas Michilinas</h3>
+                        <p class="pan__des">Galletitas en forma de gatos y corazones, perfectas para mojar en el café.</p>
+                    </div>
+                    <div class="pan">
+                        <img class="menu__img" src="../assets/pan.png" alt="panaderia">
+                        <h3 class="pan__h3">Brownie Miaulicioso</h3>
+                        <p class="pan__des">Fudge de chocolate intenso con nueces y un toque de magia gatuna.</p>
+                    </div>
+                    <div class="pan">
+                        <img class="menu__img" src="../assets/pan.png" alt="panaderia">
+                        <h3 class="pan__h3">Croissant Peludito</h3>
+                        <p class="pan__des">Hojaldre dorado con relleno de dulce de leche o crema pastelera. ¡Miau-tástico!</p>
+                    </div>
+                    <div class="pan">
+                        <img class="menu__img" src="../assets/pan.png" alt="panaderia">
+                        <h3 class="pan__h3">Cheesecake Susurro Felino</h3>
+                        <p class="pan__des">Ligero y cremoso, con base crocante y aroma a vainilla. Te hará ronronear de placer.</p>
+                    </div>  
+                </div>
+                <!-- bebidas frías-especiales -->
+                <div class="items__beb">
+                    <div class="beb 1">
+                        <img class="menu__img" src="../assets/beb.png" alt="bebida">
+                        <h3 class="beb__h3">Michi Frappé de Vainilla</h3>
+                        <p class="beb__des">Batido frío de café, vainilla y crema. Dulce y travieso.</p>
+                    </div>
+                    <div class="beb 2">
+                        <img class="menu__img" src="../assets/beb.png" alt="bebida">
+                        <h3 class="beb__h3">Té Ronroneante</h3>
+                        <p class="beb__des">Blend de té negro, canela y miel. Calienta el alma (y las patitas).</p>
+                    </div>
+                    <div class="beb 3">
+                        <img class="menu__img" src="../assets/beb.png" alt="bebida">
+                        <h3 class="beb__h3">Limonada de Gatito Feliz</h3>
+                        <p class="beb__des">Refrescante con menta y rodajas de limón. Ligera como un salto felino.</p>
+                    </div>
+                    <div class="beb 4">
+                        <img class="menu__img" src="../assets/beb.png" alt="bebida">
+                        <h3 class="beb__h3">Leche Mágica de Lavanda</h3>
+                        <p class="beb__des">Sin café, con lavanda, leche y miel. Para los que prefieren algo tierno y calmado.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer__menu">
+
+        <h2 class="der">Derechos reservados de autor</h2>
+        <h2 class="au">Creado por Mati</h2>
+
+        <ul class="redes">
             <li>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="logo-redes" src="../assets/instagram.png" alt="instagram">
+                </a>
             </li>
             <li>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img class="logo-redes" src="../assets/facebook.png" alt="facebook">
+                </a>
             </li>
             <li>
-                <a href="https://x.com/" target="_blank">X</a>
+                <a href="https://x.com/" target="_blank">
+                    <img class="logo-redes" src="../assets/x.png" alt="x">
+                </a>
             </li>
         </ul>
 
