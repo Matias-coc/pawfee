@@ -167,44 +167,32 @@ a.nav-link{
 /*inicio footer*/
 
 .footer{
-    /* box-sizing: border-box; */
     grid-row: 3 / 4;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
-} */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
 
-/* .der{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
+.footer .au, .footer .der{
+
 }
-.au{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.footer .au{
+    text-align: center;
 }
+
 .redes{
-
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1rem;
     list-style: none;
-    gap: 20px;
-}
 
-.redes li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}  */
+}
 
 .logo__ig, .logo__fb, .logo__x{
     height: 50px;
-    width: 50px;
+    width: auto;
 }
 
 
