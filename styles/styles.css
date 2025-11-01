@@ -1,20 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 /* reset de estilos */
 
 *{
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
-* {
-    outline: 1px solid red; /* solo para ver los bordes*/
-}
+ /* * {
+    outline: 1px solid red;
+    } solo para ver los bordes y solucionar  espacios vacios*/
 
 /* fin de reset */
 
@@ -30,7 +27,8 @@ body{
 .header{
     box-sizing: border-box;
     grid-row: 1 / 2;
-    margin: 10px;
+    margin: 0;
+    padding: 0;
 
 }
 .card{
@@ -163,6 +161,22 @@ a.nav-link{
 
 /* fin main-menu */
 
+/* inicio main-galeria */
+
+.titulo__gal{
+    text-align: center;
+    padding: 30px none;
+}
+.carousel{
+    padding: none;
+    
+    
+}
+    .img__car{
+        height: auto;
+    }
+
+/* fin main-galeria */
 
 /*inicio footer*/
 
@@ -175,7 +189,7 @@ a.nav-link{
 }
 
 .footer .au, .footer .der{
-    
+
 }
 
 .footer .au{
