@@ -88,37 +88,34 @@ a.nav-link{
     font-family: "Poppins", sans-serif;
 }
 
-/* Texto a la izquierda */
 .text__main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* alinea a la izquierda */
     text-align: left;
-    max-width: 500px;
     color: #4b3b32;
+    max-width: 40%;
 }
 
 .h2-in {
-    font-size: 2.8em;
+    font-size: 4em;
     color: #5c3d2e;
     margin-bottom: 10px;
 }
 
 .h3-in {
-    font-size: 1.8em;
+    font-size: 3em;
     color: #7a5441;
     margin-bottom: 15px;
 }
 
 .h4-in {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #9c7a63;
     line-height: 1.5;
 }
 
-/* Imagen a la derecha */
 .img-in {
     width: 768px;
     max-width: 100%;
@@ -217,7 +214,8 @@ a.nav-link{
 
 .titulo__gal {
     text-align: center;
-    padding: 30px none;
+    padding: 15px;
+    color: #623e3b;
 }
 
 .carousel {
@@ -233,7 +231,7 @@ a.nav-link{
 .main__gal{
     background-color: #a5dfd7;
 }
-/* Contenedor general de la sección */
+
 
 .text__gal{
     display: flex;
@@ -245,16 +243,12 @@ a.nav-link{
     background-color: #a5dfd7;
 }
 
-
-
-/* Subtítulo principal */
 .subtitulo__gal {
     font-size: 2.2rem;
     color: #623e3b;
     margin-bottom: 1rem;
 }
 
-/* Párrafo introductorio */
 .intro {
     max-width: 800px;
     font-size: 1.1rem;
@@ -263,7 +257,6 @@ a.nav-link{
     margin-bottom: 3rem;
 }
 
-/* Contenedor de cada gato */
 .gatos {
     max-width: 750px;
     background-color: #ffffff;
@@ -273,15 +266,12 @@ a.nav-link{
     margin-bottom: 2rem;
 }
 
-
-/* Nombre de cada gato */
 .titulo__gato {
     font-size: 1.5rem;
     color: #6b4e3d;
     margin-bottom: 0.8rem;
 }
 
-/* Descripción de cada gato */
 .des__gato {
     font-size: 1rem;
     color: #7a6c5c;
