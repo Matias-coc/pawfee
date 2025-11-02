@@ -21,6 +21,9 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     background-color: #7ebdc8;
+    font-family: "Delius";
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* inicio header */
@@ -39,6 +42,7 @@ body{
     display: flex;
     justify-content: start;
     background-color: #7ebdc8;
+    border: none;
 }
 
 .col-7{
@@ -70,7 +74,13 @@ a.nav-link{
 
 .col-3{
     height: auto;
+    font-size: 4em;
     color: #623e3b;
+    text-shadow: #3a2523 4px 2px 6px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #f3a6b1;
 }
 
 /*fin de header*/
@@ -93,6 +103,7 @@ a.nav-link{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    font-family: "Delius";
     text-align: left;
     color: #4b3b32;
     max-width: 40%;
@@ -325,7 +336,6 @@ a.nav-link{
     
 }
 
-/* --- LADO DERECHO --- */
 .sec__info {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
@@ -363,6 +373,9 @@ input:focus, textarea:focus{
     justify-content: space-around;
     align-items: center;
     padding: 1rem 2rem;
+    font-size: 2em;
+    color: #623e3b;
+    text-shadow: #3a2523 4px 2px 6px;
 }
 
 .footer .au, .footer .der{
@@ -384,6 +397,7 @@ input:focus, textarea:focus{
 .logo__ig, .logo__fb, .logo__x{
     height: 50px;
     width: auto;
+    box-shadow: #623e3b 4px 2px 6px;
 }
 
 
