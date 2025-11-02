@@ -46,27 +46,48 @@
     </header>
 
     <main>
-        <form class="form">
-            <label>Nombre:</label>
-            <input type="text" placeholder="karen">
-            <label>E-Mail:</label>
-            <input type="email" placeholder="Karen@gamil.com">
-            <label>Celular:</label>
-            <input type="tel" placeholder="+54 9 64244283">
-            <label>Fecha y Hora:</label>
-            <input type="datetime-local">
-            <label>Personas:</label>
-            <input type="number">
+        <section class="main__res">
+            <section class="sec__res">
+                <h2 class="h2__res">
+                    Reservá tu mesa
+                </h2>
+                <p class="p__res">
+                    En Pawffee queremos que cada visita sea especial.<br>
+                    Completá el formulario para reservar tu mesa y venir a disfrutar de un café entre ronroneos y sonrisas.
+                </p>
+            </section>
 
-            <input type="submit" value="Reservar">
-            <input type="reset" value="Reiniciar">
+            <section class="sec__for">
+                <form class="for__res">
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Karen">
+                    <label>Correo electrónico</label>
+                    <input type="text" placeholder="karen@gmail.com">
+                    <label>Fecha</label>
+                    <input type="date">
+                    <label>Hora</label>
+                    <input type="time">
+                    <label>Cantidad de personas</label>
+                    <input type="number" min="1" max="6">
+                    <label>Mensaje adicional</label>
+                    <textarea name="mensaje" rows="3" placeholder="¿Tenés alguna preferencia o alergia?"></textarea>
+                    <input type="submit" value="Reservar">
+                    <input type="reset" value="Reiniciar">
+                </form>
+            </section>
+
+            <section class="sec__info">
+                <div class="div__info">
+                    <h2 class="h2__info">Encontranos acá</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52573.59955529029!2d-58.5275670513672!3d-34.5573538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb52ed221ad7f%3A0x8527ec26f3d1d996!2sNekofi%20Cat%20Cafe!5e0!3m2!1ses-419!2sar!4v1762102110358!5m2!1ses-419!2sar" class="if__info" width="600" height="450"></iframe>
+                    <p class="p__info">Horarios:<br>Lunes a Domingo - 9:00 a 21:00 hs</p>
+                    <p class="p__info">Teléfono: 011 4567-PAWF</p>
+                    <p class="p__info">Email: reservas@pawffee.com</p>
+                </div>
+            </section>
+        </section>
 
 
-            
-
-
-
-        </form>
     </main>
 
     <footer class="footer">

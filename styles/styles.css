@@ -9,9 +9,9 @@
     padding: 0;
 }
 
- /* * {
+ * {
     outline: 1px solid red;
-    } solo para ver los bordes y solucionar  espacios vacios*/
+    } solo para ver los bordes y solucionar  espacios vacios
 
 /* fin de reset */
 
@@ -163,20 +163,84 @@ a.nav-link{
 
 /* inicio main-galeria */
 
-.titulo__gal{
+.titulo__gal {
     text-align: center;
     padding: 30px none;
 }
-.carousel{
+
+.carousel {
     padding: none;
-    
-    
+
+
 }
-    .img__car{
-        height: auto;
-    }
+
+.img__car {
+    height: auto;
+}
 
 /* fin main-galeria */
+
+/* main reserva */
+
+.main__res {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    background-color: #fffaf7;
+    font-family: "Poppins", sans-serif;
+}
+
+/* --- LADO IZQUIERDO --- */
+.sec__res {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec__for {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.for__res{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+/* --- LADO DERECHO --- */
+.sec__info {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 10px;
+}
+.div__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/* fin main reserva */
+
 
 /*inicio footer*/
 
