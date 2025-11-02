@@ -9,9 +9,9 @@
     padding: 0;
 }
 
- * {
+ /* * {
     outline: 1px solid red;
-    } solo para ver los bordes y solucionar  espacios vacios
+    } solo para ver los bordes y solucionar  espacios vacios */
 
 /* fin de reset */
 
@@ -74,45 +74,59 @@ a.nav-link{
 
 /*inicio main-index*/
 
-.main-index{
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(3, 33%);
+.main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+    background-color: #fffaf7;
+    height: 80vh;
+    font-family: "Poppins", sans-serif;
 }
-.img-in{
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    justify-self: center;
-    align-self: center;
-    height: 60%;
-    width: auto;
+
+/* Texto a la izquierda */
+.text__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* alinea a la izquierda */
+    text-align: left;
+    max-width: 500px;
+    color: #4b3b32;
 }
-.h2-in{
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    justify-self: center;
-    align-self: center;
+
+.h2-in {
+    font-size: 2.8em;
+    color: #5c3d2e;
+    margin-bottom: 10px;
+}
+
+.h3-in {
+    font-size: 1.8em;
+    color: #7a5441;
+    margin-bottom: 15px;
+}
+
+.h4-in {
+    font-size: 1.2em;
+    color: #9c7a63;
+    line-height: 1.5;
+}
+
+/* Imagen a la derecha */
+.img-in {
+    width: 768px;
+    max-width: 100%;
     height: auto;
-    width: auto;
+    border-radius: 20px;
+    
 }
-.h3-in{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    justify-self: center;
-    align-self: center;
-    height: auto;
-    width: auto;
-}
-.h4-in{
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-    justify-self: center;
-    align-self: center;
-    height: auto;
-    width: auto;
-    text-align: center;
-}
+
+
+
+
 
 /*fin de main-index*/
 
@@ -155,8 +169,21 @@ a.nav-link{
 .items__cafes, .items__pan, .items__beb{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
 }
+
+.cafe__esp,
+.pan,
+.beb {
+    background-color: #ffffff;
+    border: 2px solid #f2e0c9;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
 
 
 /* fin main-menu */
