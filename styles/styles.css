@@ -400,3 +400,42 @@ input:focus, textarea:focus{
     box-shadow: #623e3b 4px 2px 6px;
 }
 /*fin de footer*/
+
+@media (min-width: 320px) and (max-width: 430px) {
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    .main-index {
+        flex-direction: row-reverse;
+        justify-content: center;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .menu__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .items__cafes,
+    .items__pan,
+    .items__beb {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carousel img {
+        height: 400px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+}
