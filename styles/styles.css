@@ -146,12 +146,14 @@ a.nav-link{
     grid-template-rows: auto auto 1fr;
 }
 .menu__h2{
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
+    text-align: center;
 }
 .menu__p{
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
+    text-align: center;
 }
 .menu__items{
     grid-column: 1 / 4;
@@ -172,9 +174,11 @@ a.nav-link{
     gap: 2rem;
 }
 
-.cafe__esp,
-.pan,
-.beb {
+.cafe__esp, .pan, .beb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     border: 2px solid #f2e0c9;
     border-radius: 15px;
@@ -182,7 +186,21 @@ a.nav-link{
     width: 100%;
 }
 
+.cafe__h3,
+.pan__h3,
+.beb__h3 {
+    font-size: 1.3rem;
+    color: #6b4e3d;
+    margin-bottom: 0.5rem;
+}
 
+.cafe__des,
+.pan__des,
+.beb__des {
+    font-size: 0.95rem;
+    color: #7a6c5c;
+    text-align: center;
+}
 
 
 
