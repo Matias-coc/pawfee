@@ -29,21 +29,10 @@ body{
 /* inicio header */
 
 .header{
-<<<<<<< HEAD
-    margin: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    position: sticky;
-    top: 0;
-=======
     box-sizing: border-box;
     grid-row: 1 / 2;
     margin: 0;
     padding: 0;
->>>>>>> testing
 
 }
 .card{
