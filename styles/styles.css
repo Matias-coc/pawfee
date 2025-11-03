@@ -29,7 +29,6 @@ body{
 /* inicio header */
 
 .header{
-    box-sizing: border-box;
     grid-row: 1 / 2;
     margin: 0;
     padding: 0;
@@ -304,7 +303,6 @@ a.nav-link{
     padding: 10px;
 }
 
-/* --- LADO IZQUIERDO --- */
 .sec__res {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -408,6 +406,7 @@ input:focus, textarea:focus{
         gap: 1rem;
     }
 
+<<<<<<< HEAD
     .titulo-principal {
         font-size: 1.8rem;
     }
@@ -438,4 +437,294 @@ input:focus, textarea:focus{
         justify-content: space-between;
         padding: 1rem 2rem;
     }
+=======
+/*fin de footer*/
+
+/* RESPONSIVE */
+
+@media (min-width:320px) and (max-width:430px) {
+
+    .header {
+            display: grid;
+            grid-template-areas: 
+            "card" "titulo-principal"
+            "col-7" "col-7"
+            ;
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* .header .row {
+            flex-direction: column;
+            align-items: center;
+        } */
+    
+        .header>.card {
+            width: 60px;
+            height: auto;
+            margin-bottom: 0.5rem;
+            min-width: 60px;
+        }
+    
+        .titulo-principal {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    
+        .navbar {
+            width: 90%;
+            justify-content: center;
+        }
+    
+        .navbar-collapse {
+            flex-direction: column;
+            flex-grow: 0;
+            align-items: center;
+            border-radius: 8px;
+            width: 90%;
+            margin-top: 0.5rem;
+        }
+    
+        .navbar>.container,
+        .navbar>.container-fluid,
+        .navbar>.container-lg,
+        .navbar>.container-md,
+        .navbar>.container-sm,
+        .navbar>.container-xl,
+        .navbar>.container-xxl {
+            justify-content: center;
+    
+        }
+    
+        .navbar-nav {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.5rem 0;
+            width: 100%;
+        }
+    
+        .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+    
+        /* main-index */
+    
+        .main-index {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            padding: 6px;
+            font-family: "Poppins", sans-serif;
+        }
+    
+        .text__main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .h2-in {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+    
+        .h3-in {
+            font-size: 0.7rem;
+            margin-bottom: 15px;
+        }
+    
+        .h4-in {
+            font-size: 0.6rem;
+        }
+    
+        .img-in {
+            width: 320px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+    
+        }
+    
+        /* fin main-in */
+    
+        /* main-menu */
+
+        .menu__img{
+    height: 32px;
+    width: 32px;
+}
+.main__menu{
+    grid-row: 2 / 3;
+    padding: 5px;
+}
+
+.menu{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+.menu__h2{
+    text-align: center;
+    font-size: 1rem;
+
+}
+.menu__p{
+    text-align: center;
+    font-size: 0.9rem;
+
+}
+
+.items__cafes, .items__pan, .items__beb{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cafe__esp, .pan, .beb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.cafe__h3,
+.pan__h3,
+.beb__h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cafe__des,
+.pan__des,
+.beb__des {
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+
+        /* fin main-menu */
+
+        /* mian-galeria */
+
+        .titulo__gal {
+    text-align: center;
+    padding: 15px;
+}
+.h2__gal{
+    font-size: 1rem;
+}
+.carousel {
+    padding: none;
+
+
+}
+
+.img__car {
+    height: auto;
+}
+
+
+.subtitulo__gal {
+    font-size: 1rem;
+}
+
+.intro {
+    max-width: 800px;
+    font-size: 0.7rem;
+}
+
+
+.titulo__gato {
+    font-size: 1rem;
+}
+
+.des__gato {
+    font-size: 0.7rem;
+}
+
+
+        /* fin main-galeria */
+
+    /* main-reserva */
+
+    .main__res {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec__res {
+    font-size: 0.7rem;
+}
+
+.sec__for {
+    font-size: 0.7rem;
+}
+
+.for__res{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+.sec__info {
+    font-size: 0.7rem;
+}
+iframe {
+    width: 320px;
+    height: auto;
+}
+.div__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 5px;
+} 
+
+    /* fin main-reserva */
+
+
+        /* footer */
+    
+        .footer {
+            padding: 1rem 2rem;
+        }
+    
+        .der,
+        .au {
+            font-size: 0.5rem;
+        }
+    
+        .footer .au,
+        .footer .der {
+            color: #623e3b;
+        }
+    
+        .footer .au {
+            text-align: center;
+        }
+    
+        .redes {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            list-style: none;
+    
+        }
+    
+        .logo__ig,
+        .logo__fb,
+        .logo__x {
+            height: 20px;
+            width: auto;
+        }
+
+>>>>>>> testing
 }
