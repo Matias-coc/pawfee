@@ -406,38 +406,6 @@ input:focus, textarea:focus{
         gap: 1rem;
     }
 
-<<<<<<< HEAD
-    .titulo-principal {
-        font-size: 1.8rem;
-    }
-
-    .main-index {
-        flex-direction: row-reverse;
-        justify-content: center;
-        text-align: left;
-        gap: 2rem;
-    }
-
-    .menu__items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .items__cafes,
-    .items__pan,
-    .items__beb {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .carousel img {
-        height: 400px;
-    }
-
-    .footer {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-    }
-=======
 /*fin de footer*/
 
 /* RESPONSIVE */
@@ -716,7 +684,6 @@ iframe {
             justify-content: space-between;
             gap: 1rem;
             list-style: none;
-    
         }
     
         .logo__ig,
@@ -725,6 +692,3 @@ iframe {
             height: 20px;
             width: auto;
         }
-
->>>>>>> testing
-}
