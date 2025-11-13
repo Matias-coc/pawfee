@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$fuente: "Delius";
+$background: #a5dfd7;
+$marron: #623e3b;
+$rosa: #f3a6b1;
+$cian: #7ebdc8;
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #7ebdc8;
+    font-family: "Delius";
+    font-weight: 800;
+    font-style: normal;
+}
+
+// MIXINS
+
+@mixin flex($direction, $justify, $aling, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-wrap: $wrap;
+}
