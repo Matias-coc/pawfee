@@ -28,13 +28,13 @@ body{
 
 /* inicio header */
 
-.header{
+/* .header{
     grid-row: 1 / 2;
     margin: 0;
     padding: 0;
 
-}
-.card{
+} */
+/* .card{
     height: 10vh;
     width: auto;
     padding: 0;
@@ -42,45 +42,45 @@ body{
     justify-content: start;
     background-color: #7ebdc8;
     border: none;
-}
+} */
 
-.col-7{
+/* .col-7{
     padding: 0;
     margin: 0;
     height: 8vh;
     width: auto;
-}
+} */
 
-.navbar-nav{
+/* .navbar-nav{
     gap: 10px;
-}
+} */
 
-.navbar-nav li{
+/* .navbar-nav li{
     padding: 10px;
     border: 3px solid #f3a6b1;
     border-radius: 5px;
     background-color: #a5dfd7;
 
-}
+} */
 
-a.nav-link{
+/* a.nav-link{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     color: #623e3b;
-}
+} */
 
-.col-3{
+/* .col-3{
     height: auto;
     font-size: 4em;
     color: #623e3b;
     text-shadow: #3a2523 4px 2px 6px;
-}
+} */
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: #f3a6b1;
-}
+} */
 
 /*fin de header*/
 

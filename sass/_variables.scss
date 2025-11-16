@@ -33,3 +33,11 @@ body{
     align-items: $aling;
     flex-wrap: $wrap;
 }
+
+// MIXIN RESPONSIVE
+
+@mixin mobile{
+    @media (min-width:320px) and (max-width:430px){
+        @content;
+    }
+}

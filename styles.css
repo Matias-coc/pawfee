@@ -69,81 +69,14 @@ header .navbar .navbar-nav li a.nav-link {
   flex-wrap: nowrap;
 }
 @media (min-width: 320px) and (max-width: 430px) {
-  header .d-flex {
-    flex-direction: row;
-    gap: 1rem;
+  header .titulo-principal {
+    font-size: 1.5rem;
   }
-  header .d-flex .titulo-principal {
-    font-size: 2rem;
-    text-align: center;
-  }
-  header .d-flex .navbar {
-    width: 100%;
-    justify-content: center;
-  }
-  header .d-flex .navbar .navbar-collapse {
+  header .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    justify-content: center !important;
+    background-color: #7ebdc8;
   }
-  header .d-flex .navbar .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  header .d-flex .navbar .navbar-collapse .navbar-nav li {
-    width: 80%;
-    text-align: center;
-  }
-}
-
-.main-index {
-  gap: 50px;
-  padding: 60px;
-  border-color: #7ebdc8;
-  height: 80vh;
-  font-family: "Poppins", sans-serif;
-}
-.main-index .img-in {
-  width: 786px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-.main-index .text__main {
-  font-family: "Delius";
-  text-align: left;
-  color: #623e3b;
-  max-width: 40%;
-}
-.main-index .text__main .h2-in {
-  font-size: 4em;
-  color: #5c3d2e;
-  margin-bottom: 10px;
-}
-.main-index .text__main .h3-in {
-  font-size: 3em;
-  color: #7a5441;
-  margin-bottom: 15px;
-}
-.main-index .text__main .h4-in {
-  font-size: 2em;
-  color: #9c7a63;
-  line-height: 1.5;
-}
-.main-index .text__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-.main-index {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -49,4 +49,35 @@ header{
             }
         }
     }
+    @include v.mobile{
+        
+        .d-flex{
+            flex-direction: row;
+            gap: 1rem;
+            .titulo-principal{
+                font-size: 2rem;
+                text-align: center;
+            }
+            .navbar{
+                width: 100%;
+                justify-content: center;
+                .navbar-collapse{
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    justify-content: center !important;
+                    .navbar-nav{
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.5rem;
+                    }
+                    .navbar-nav li{
+                        width: 80%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
+
+

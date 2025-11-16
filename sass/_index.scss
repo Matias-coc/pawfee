@@ -1,0 +1,40 @@
+@use "variables" as v;
+
+.main-index{
+    gap: 50px;
+    padding: 60px;
+    border-color: v.$cian;
+    height: 80vh;
+    font-family: "Poppins", sans-serif;
+    .img-in{
+        width: 786px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .text__main{
+        font-family: "Delius";
+        text-align: left;
+        color: v.$marron;
+        max-width: 40%;
+        .h2-in{
+            font-size: 4em;
+            color: #5c3d2e;
+            margin-bottom: 10px;
+        }
+        .h3-in{
+            font-size: 3em;
+            color: #7a5441;
+            margin-bottom: 15px;
+        }
+        .h4-in{
+            font-size: 2em;
+            color: #9c7a63;
+            line-height: 1.5;
+        }
+        @include v.flex (column, center, flex-start, wrap)
+    }
+    @include v.flex (column, space-around, center, wrap)
+
+
+}
