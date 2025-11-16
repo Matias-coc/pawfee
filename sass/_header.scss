@@ -4,6 +4,7 @@
 header{
     background-color: v.$cian;
     grid-row: 1 / 2;
+    padding-bottom: 30px;
     .offcanvas, .offcanvas-end, .text-bg-dark{
         background-color: v.$marron !important;
     }
@@ -17,7 +18,7 @@ header{
     .card{
         height: 10vh;
         width: auto;
-        padding: 0;
+        
         display: flex;
         justify-content: start;
         background-color: #7ebdc8;

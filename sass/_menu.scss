@@ -1,0 +1,118 @@
+@use "variables" as v;
+
+.main__menu{
+    grid-row: 2 / 3;
+    background-color: v.$background;
+    padding: 10px;
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto 1fr;
+        .menu__h2{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            text-align: center;
+            color: v.$marron;
+        }
+        .menu__p{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            text-align: center;
+            color: v.$marron;
+        }
+        .menu__items{
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            justify-self: space-around;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .items__cafes, .items__pan, .items__beb{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                .cafe__esp, .pan, .beb {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #ffffff;
+                    border: 2px solid #f3a6b1;
+                    border-radius: 15px;
+                    padding: 1rem;
+                    width: 100%;
+                    .menu__img{
+                        width: 64px;
+                        height: 64px;
+                    }
+                    .cafe__h3,
+                    .pan__h3,
+                    .beb__h3 {
+                            font-size: 1.3rem;
+                            color: #623e3b;
+                            margin-bottom: 0.5rem;
+                        }
+                    .cafe__des,
+                    .pan__des,
+                    .beb__des {
+                            font-size: 0.95rem;
+                            color: #7a6c5c;
+                            text-align: center;
+                            }
+                }
+            }
+        }
+    }
+    @include v.mobile{
+        grid-row: 2 / 3;
+        padding: 5px;
+        .menu{
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            .menu__h2{
+            text-align: center;
+            font-size: 1rem;
+            }
+            .menu__p{
+            text-align: center;
+            font-size: 0.9rem;
+            }
+            .menu__items{
+                .items__cafes, .items__pan, .items__beb{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .cafe__esp, .pan, .beb {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 15px;
+                    padding: 1rem;
+                    width: 100%;
+                    .menu__img{
+                        height: 32px;
+                        width: 32px;
+                    }
+                    .cafe__h3,
+                    .pan__h3,
+                    .beb__h3 {
+                        font-size: 1rem;
+                        margin-bottom: 0.5rem;
+                    }
+                    .cafe__des,
+                    .pan__des,
+                    .beb__des {
+                        font-size: 0.95rem;
+                        text-align: center;
+                    }
+                }
+                }   
+            }
+        }
+    }
+}

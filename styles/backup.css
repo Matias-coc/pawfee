@@ -86,7 +86,7 @@ body{
 
 /*inicio main-index*/
 
-.main-index {
+/* .main-index {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -133,7 +133,7 @@ body{
     border-radius: 20px;
     
 }
-
+ */
 
 
 
@@ -142,7 +142,7 @@ body{
 
 /* inicio main-menu */
 
-.menu__img{
+/* .menu__img{
     height: 64px;
     width: 64px;
 }
@@ -214,7 +214,7 @@ body{
     font-size: 0.95rem;
     color: #7a6c5c;
     text-align: center;
-}
+} */
 
 
 
@@ -222,7 +222,7 @@ body{
 
 /* inicio main-galeria */
 
-.titulo__gal {
+/* .titulo__gal {
     text-align: center;
     padding: 15px;
     color: #623e3b;
@@ -285,14 +285,14 @@ body{
 .des__gato {
     font-size: 1rem;
     color: #7a6c5c;
-}
+} */
 
 
 /* fin main-galeria */
 
 /* main reserva */
 
-.main__res {
+/* .main__res {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -358,14 +358,14 @@ body{
 
 input:focus, textarea:focus{
     background-color: #f3a6b1;
-}
+} */
 
 /* fin main reserva */
 
 
 /*inicio footer*/
 
-.footer{
+/* .footer{
     grid-row: 3 / 4;
     display: flex;
     justify-content: space-around;
@@ -395,16 +395,16 @@ input:focus, textarea:focus{
 .logo__ig, .logo__fb, .logo__x{
     height: 50px;
     width: auto;
-    box-shadow: #623e3b 4px 2px 6px;
+    box-shadow: #623e3b 4px 2px 6px; */
 }
 /*fin de footer*/
 
-@media (min-width: 320px) and (max-width: 430px) {
+/* @media (min-width: 320px) and (max-width: 430px) {
     .navbar-nav {
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
-    }
+    } */
 
 /*fin de footer*/
 
@@ -427,7 +427,7 @@ input:focus, textarea:focus{
             align-items: center;
         } */
     
-        .header>.card {
+        /* .header>.card {
             width: 60px;
             height: auto;
             margin-bottom: 0.5rem;
@@ -476,10 +476,10 @@ input:focus, textarea:focus{
         .nav-item {
             width: 100%;
             text-align: center;
-        }
+        } */
     
         /* main-index */
-    
+/*     
         .main-index {
             flex-direction: column;
             align-items: center;
@@ -514,13 +514,13 @@ input:focus, textarea:focus{
             height: auto;
             border-radius: 20px;
     
-        }
+        } */
     
         /* fin main-in */
     
         /* main-menu */
 
-        .menu__img{
+.menu__img{
     height: 32px;
     width: 32px;
 }
@@ -579,7 +579,7 @@ input:focus, textarea:focus{
 
         /* mian-galeria */
 
-        .titulo__gal {
+        /* .titulo__gal {
     text-align: center;
     padding: 15px;
 }
@@ -613,7 +613,7 @@ input:focus, textarea:focus{
 
 .des__gato {
     font-size: 0.7rem;
-}
+} */
 
 
         /* fin main-galeria */

@@ -19,6 +19,7 @@ body {
 header {
   background-color: #7ebdc8;
   grid-row: 1/2;
+  padding-bottom: 30px;
 }
 header .offcanvas, header .offcanvas-end, header .text-bg-dark {
   background-color: #623e3b !important;
@@ -33,7 +34,6 @@ header .titulo-principal {
 header .card {
   height: 10vh;
   width: auto;
-  padding: 0;
   display: flex;
   justify-content: start;
   background-color: #7ebdc8;
@@ -128,6 +128,332 @@ header .navbar .navbar-nav li a.nav-link {
   .footer .redes .logo__x {
     height: 20px;
     width: auto;
+  }
+}
+
+.main__gal {
+  grid-row: 2/3;
+  background-color: #a5dfd7;
+}
+.main__gal .titulo__gal {
+  text-align: center;
+  padding: 15px;
+  color: #623e3b;
+}
+.main__gal .titulo__gal .carousel {
+  padding: none;
+}
+.main__gal .titulo__gal .carousel .img__car {
+  height: 320px;
+}
+.main__gal .text__gal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 4rem 2rem;
+}
+.main__gal .text__gal .subtitulo__gal {
+  font-size: 2.2rem;
+  color: #623e3b;
+  margin-bottom: 1rem;
+}
+.main__gal .text__gal .intro {
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #7a6c5c;
+  margin-bottom: 3rem;
+}
+.main__gal .text__gal .gatos {
+  max-width: 750px;
+  background-color: #ffffff;
+  border: 2px solid #f3a6b1;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.main__gal .text__gal .gatos .titulo__gato {
+  font-size: 1.5rem;
+  color: #6b4e3d;
+  margin-bottom: 0.8rem;
+}
+.main__gal .text__gal .gatos .des__gato {
+  font-size: 1rem;
+  color: #7a6c5c;
+}
+
+.main__res {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  background-color: #a5dfd7;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+.main__res .h2__res, .main__res .p__res, .main__res label, .main__res .h2__info, .main__res .p__info {
+  color: #623e3b;
+}
+.main__res .sec__res {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #a5dfd7;
+  border: 3px solid #f3a6b1;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__res .sec__for {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  background-color: #a5dfd7;
+  border: 3px solid #f3a6b1;
+  padding: 20px;
+  border-radius: 15px;
+}
+.main__res .sec__for .for__res {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.main__res .sec__for .for__res input:focus, .main__res .sec__for .for__res textarea:focus {
+  background-color: #f3a6b1;
+}
+.main__res .sec__info {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  background-color: #a5dfd7;
+  border: 3px solid #f3a6b1;
+  border-radius: 15px;
+  padding: 20px;
+  gap: 10px;
+}
+.main__res .sec__info .div__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 5px;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .main__res {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__res .sec__res {
+    font-size: 0.7rem;
+  }
+  .main__res .sec__for {
+    font-size: 0.7rem;
+  }
+  .main__res .sec__for .for__res {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .main__res .sec__info {
+    font-size: 0.7rem;
+  }
+  .main__res .sec__info iframe {
+    width: 320px;
+    height: auto;
+  }
+  .main__res .sec__info .div__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 5px;
+  }
+}
+
+.main__menu {
+  grid-row: 2/3;
+  background-color: #a5dfd7;
+  padding: 10px;
+}
+.main__menu .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr;
+}
+.main__menu .menu .menu__h2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  color: #623e3b;
+}
+.main__menu .menu .menu__p {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  color: #623e3b;
+}
+.main__menu .menu .menu__items {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-self: space-around;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main__menu .menu .menu__items .items__cafes, .main__menu .menu .menu__items .items__pan, .main__menu .menu .menu__items .items__beb {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.main__menu .menu .menu__items .items__cafes .cafe__esp, .main__menu .menu .menu__items .items__cafes .pan, .main__menu .menu .menu__items .items__cafes .beb, .main__menu .menu .menu__items .items__pan .cafe__esp, .main__menu .menu .menu__items .items__pan .pan, .main__menu .menu .menu__items .items__pan .beb, .main__menu .menu .menu__items .items__beb .cafe__esp, .main__menu .menu .menu__items .items__beb .pan, .main__menu .menu .menu__items .items__beb .beb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #f3a6b1;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 100%;
+}
+.main__menu .menu .menu__items .items__cafes .cafe__esp .menu__img, .main__menu .menu .menu__items .items__cafes .pan .menu__img, .main__menu .menu .menu__items .items__cafes .beb .menu__img, .main__menu .menu .menu__items .items__pan .cafe__esp .menu__img, .main__menu .menu .menu__items .items__pan .pan .menu__img, .main__menu .menu .menu__items .items__pan .beb .menu__img, .main__menu .menu .menu__items .items__beb .cafe__esp .menu__img, .main__menu .menu .menu__items .items__beb .pan .menu__img, .main__menu .menu .menu__items .items__beb .beb .menu__img {
+  width: 64px;
+  height: 64px;
+}
+.main__menu .menu .menu__items .items__cafes .cafe__esp .cafe__h3,
+.main__menu .menu .menu__items .items__cafes .cafe__esp .pan__h3,
+.main__menu .menu .menu__items .items__cafes .cafe__esp .beb__h3, .main__menu .menu .menu__items .items__cafes .pan .cafe__h3,
+.main__menu .menu .menu__items .items__cafes .pan .pan__h3,
+.main__menu .menu .menu__items .items__cafes .pan .beb__h3, .main__menu .menu .menu__items .items__cafes .beb .cafe__h3,
+.main__menu .menu .menu__items .items__cafes .beb .pan__h3,
+.main__menu .menu .menu__items .items__cafes .beb .beb__h3, .main__menu .menu .menu__items .items__pan .cafe__esp .cafe__h3,
+.main__menu .menu .menu__items .items__pan .cafe__esp .pan__h3,
+.main__menu .menu .menu__items .items__pan .cafe__esp .beb__h3, .main__menu .menu .menu__items .items__pan .pan .cafe__h3,
+.main__menu .menu .menu__items .items__pan .pan .pan__h3,
+.main__menu .menu .menu__items .items__pan .pan .beb__h3, .main__menu .menu .menu__items .items__pan .beb .cafe__h3,
+.main__menu .menu .menu__items .items__pan .beb .pan__h3,
+.main__menu .menu .menu__items .items__pan .beb .beb__h3, .main__menu .menu .menu__items .items__beb .cafe__esp .cafe__h3,
+.main__menu .menu .menu__items .items__beb .cafe__esp .pan__h3,
+.main__menu .menu .menu__items .items__beb .cafe__esp .beb__h3, .main__menu .menu .menu__items .items__beb .pan .cafe__h3,
+.main__menu .menu .menu__items .items__beb .pan .pan__h3,
+.main__menu .menu .menu__items .items__beb .pan .beb__h3, .main__menu .menu .menu__items .items__beb .beb .cafe__h3,
+.main__menu .menu .menu__items .items__beb .beb .pan__h3,
+.main__menu .menu .menu__items .items__beb .beb .beb__h3 {
+  font-size: 1.3rem;
+  color: #623e3b;
+  margin-bottom: 0.5rem;
+}
+.main__menu .menu .menu__items .items__cafes .cafe__esp .cafe__des,
+.main__menu .menu .menu__items .items__cafes .cafe__esp .pan__des,
+.main__menu .menu .menu__items .items__cafes .cafe__esp .beb__des, .main__menu .menu .menu__items .items__cafes .pan .cafe__des,
+.main__menu .menu .menu__items .items__cafes .pan .pan__des,
+.main__menu .menu .menu__items .items__cafes .pan .beb__des, .main__menu .menu .menu__items .items__cafes .beb .cafe__des,
+.main__menu .menu .menu__items .items__cafes .beb .pan__des,
+.main__menu .menu .menu__items .items__cafes .beb .beb__des, .main__menu .menu .menu__items .items__pan .cafe__esp .cafe__des,
+.main__menu .menu .menu__items .items__pan .cafe__esp .pan__des,
+.main__menu .menu .menu__items .items__pan .cafe__esp .beb__des, .main__menu .menu .menu__items .items__pan .pan .cafe__des,
+.main__menu .menu .menu__items .items__pan .pan .pan__des,
+.main__menu .menu .menu__items .items__pan .pan .beb__des, .main__menu .menu .menu__items .items__pan .beb .cafe__des,
+.main__menu .menu .menu__items .items__pan .beb .pan__des,
+.main__menu .menu .menu__items .items__pan .beb .beb__des, .main__menu .menu .menu__items .items__beb .cafe__esp .cafe__des,
+.main__menu .menu .menu__items .items__beb .cafe__esp .pan__des,
+.main__menu .menu .menu__items .items__beb .cafe__esp .beb__des, .main__menu .menu .menu__items .items__beb .pan .cafe__des,
+.main__menu .menu .menu__items .items__beb .pan .pan__des,
+.main__menu .menu .menu__items .items__beb .pan .beb__des, .main__menu .menu .menu__items .items__beb .beb .cafe__des,
+.main__menu .menu .menu__items .items__beb .beb .pan__des,
+.main__menu .menu .menu__items .items__beb .beb .beb__des {
+  font-size: 0.95rem;
+  color: #7a6c5c;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .main__menu {
+    grid-row: 2/3;
+    padding: 5px;
+  }
+  .main__menu .menu {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+  }
+  .main__menu .menu .menu__h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .main__menu .menu .menu__p {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .main__menu .menu .menu__items .items__cafes, .main__menu .menu .menu__items .items__pan, .main__menu .menu .menu__items .items__beb {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main__menu .menu .menu__items .items__cafes .cafe__esp, .main__menu .menu .menu__items .items__cafes .pan, .main__menu .menu .menu__items .items__cafes .beb, .main__menu .menu .menu__items .items__pan .cafe__esp, .main__menu .menu .menu__items .items__pan .pan, .main__menu .menu .menu__items .items__pan .beb, .main__menu .menu .menu__items .items__beb .cafe__esp, .main__menu .menu .menu__items .items__beb .pan, .main__menu .menu .menu__items .items__beb .beb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+  }
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .menu__img, .main__menu .menu .menu__items .items__cafes .pan .menu__img, .main__menu .menu .menu__items .items__cafes .beb .menu__img, .main__menu .menu .menu__items .items__pan .cafe__esp .menu__img, .main__menu .menu .menu__items .items__pan .pan .menu__img, .main__menu .menu .menu__items .items__pan .beb .menu__img, .main__menu .menu .menu__items .items__beb .cafe__esp .menu__img, .main__menu .menu .menu__items .items__beb .pan .menu__img, .main__menu .menu .menu__items .items__beb .beb .menu__img {
+    height: 32px;
+    width: 32px;
+  }
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .cafe__h3,
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .pan__h3,
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .beb__h3, .main__menu .menu .menu__items .items__cafes .pan .cafe__h3,
+  .main__menu .menu .menu__items .items__cafes .pan .pan__h3,
+  .main__menu .menu .menu__items .items__cafes .pan .beb__h3, .main__menu .menu .menu__items .items__cafes .beb .cafe__h3,
+  .main__menu .menu .menu__items .items__cafes .beb .pan__h3,
+  .main__menu .menu .menu__items .items__cafes .beb .beb__h3, .main__menu .menu .menu__items .items__pan .cafe__esp .cafe__h3,
+  .main__menu .menu .menu__items .items__pan .cafe__esp .pan__h3,
+  .main__menu .menu .menu__items .items__pan .cafe__esp .beb__h3, .main__menu .menu .menu__items .items__pan .pan .cafe__h3,
+  .main__menu .menu .menu__items .items__pan .pan .pan__h3,
+  .main__menu .menu .menu__items .items__pan .pan .beb__h3, .main__menu .menu .menu__items .items__pan .beb .cafe__h3,
+  .main__menu .menu .menu__items .items__pan .beb .pan__h3,
+  .main__menu .menu .menu__items .items__pan .beb .beb__h3, .main__menu .menu .menu__items .items__beb .cafe__esp .cafe__h3,
+  .main__menu .menu .menu__items .items__beb .cafe__esp .pan__h3,
+  .main__menu .menu .menu__items .items__beb .cafe__esp .beb__h3, .main__menu .menu .menu__items .items__beb .pan .cafe__h3,
+  .main__menu .menu .menu__items .items__beb .pan .pan__h3,
+  .main__menu .menu .menu__items .items__beb .pan .beb__h3, .main__menu .menu .menu__items .items__beb .beb .cafe__h3,
+  .main__menu .menu .menu__items .items__beb .beb .pan__h3,
+  .main__menu .menu .menu__items .items__beb .beb .beb__h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .cafe__des,
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .pan__des,
+  .main__menu .menu .menu__items .items__cafes .cafe__esp .beb__des, .main__menu .menu .menu__items .items__cafes .pan .cafe__des,
+  .main__menu .menu .menu__items .items__cafes .pan .pan__des,
+  .main__menu .menu .menu__items .items__cafes .pan .beb__des, .main__menu .menu .menu__items .items__cafes .beb .cafe__des,
+  .main__menu .menu .menu__items .items__cafes .beb .pan__des,
+  .main__menu .menu .menu__items .items__cafes .beb .beb__des, .main__menu .menu .menu__items .items__pan .cafe__esp .cafe__des,
+  .main__menu .menu .menu__items .items__pan .cafe__esp .pan__des,
+  .main__menu .menu .menu__items .items__pan .cafe__esp .beb__des, .main__menu .menu .menu__items .items__pan .pan .cafe__des,
+  .main__menu .menu .menu__items .items__pan .pan .pan__des,
+  .main__menu .menu .menu__items .items__pan .pan .beb__des, .main__menu .menu .menu__items .items__pan .beb .cafe__des,
+  .main__menu .menu .menu__items .items__pan .beb .pan__des,
+  .main__menu .menu .menu__items .items__pan .beb .beb__des, .main__menu .menu .menu__items .items__beb .cafe__esp .cafe__des,
+  .main__menu .menu .menu__items .items__beb .cafe__esp .pan__des,
+  .main__menu .menu .menu__items .items__beb .cafe__esp .beb__des, .main__menu .menu .menu__items .items__beb .pan .cafe__des,
+  .main__menu .menu .menu__items .items__beb .pan .pan__des,
+  .main__menu .menu .menu__items .items__beb .pan .beb__des, .main__menu .menu .menu__items .items__beb .beb .cafe__des,
+  .main__menu .menu .menu__items .items__beb .beb .pan__des,
+  .main__menu .menu .menu__items .items__beb .beb .beb__des {
+    font-size: 0.95rem;
+    text-align: center;
   }
 }
 
