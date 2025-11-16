@@ -20,6 +20,9 @@ header {
   background-color: #7ebdc8;
   grid-row: 1/2;
 }
+header .offcanvas, header .offcanvas-end, header .text-bg-dark {
+  background-color: #623e3b !important;
+}
 header .titulo-principal {
   height: auto;
   width: auto;
@@ -69,31 +72,62 @@ header .navbar .navbar-nav li a.nav-link {
   flex-wrap: nowrap;
 }
 @media (min-width: 320px) and (max-width: 430px) {
-  header .d-flex {
-    flex-direction: row;
-    gap: 1rem;
+  header {
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 30%);
+    align-items: center;
   }
-  header .d-flex .titulo-principal {
-    font-size: 2rem;
-    text-align: center;
+  header .card {
+    grid-row: 1/2;
   }
-  header .d-flex .navbar {
-    width: 100%;
-    justify-content: center;
+  header .titulo-principal {
+    font-size: 1.5rem;
+    grid-row: 2/3;
   }
-  header .d-flex .navbar .navbar-collapse {
+  header .navbar-nav {
+    grid-row: 3/4;
+  }
+  header .offcanvas-body {
     flex-basis: 100%;
     flex-grow: 1;
-    justify-content: center !important;
   }
-  header .d-flex .navbar .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+}
+
+.footer {
+  grid-row: 3/4;
+  padding: 1rem 2rem;
+  font-size: 2em;
+  color: #623e3b;
+  text-shadow: #3a2523 4px 2px 6px;
+}
+.footer .redes {
+  gap: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .au .der {
+  color: #623e3b;
+  text-align: center;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .footer .der, .footer .au {
+    font-size: 1rem;
   }
-  header .d-flex .navbar .navbar-collapse .navbar-nav li {
-    width: 80%;
-    text-align: center;
+  .footer .redes .logo__ig,
+  .footer .redes .logo__fb,
+  .footer .redes .logo__x {
+    height: 20px;
+    width: auto;
   }
 }
 
@@ -144,6 +178,32 @@ header .navbar .navbar-nav li a.nav-link {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .main-index {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 6px;
+    font-family: "Poppins", sans-serif;
+  }
+  .main-index .text__main {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-index .text__main .h2-in {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .main-index .text__main .h3-in {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .main-index .text__main .h4-in {
+    font-size: 0.6rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,40 +10,46 @@
 </head>
 <body>
     <header class="header container-fluid">
-        <div class="row d-flex justify-content-around align-items-center">
-            <a class="col-1 navbar-brand d-flex align-items-center" href="../index.html">
-                <img src="../assets/Gemini_Generated_Image_o61z9co61z9co61z.png" alt="logo de la pag" class="card">
-            </a>
-            <h1 class="titulo-principal col-3 d-flex align-items-center justify-content-center">Merch</h1>
-    
-            <nav class="col-7 navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="d-flex-nowrap navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="col-2 nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
+        <nav class="navbar" aria-label="Dark offcanvas navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/Gemini_Generated_Image_o61z9co61z9co61z.png" alt="Logo de la página" class="card">
+                </a>
+                <h1 class="titulo-principal d-flex align-items-center justify-content-center">Pawffee</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                    aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel" style="background-color: var(--bs-warning-bg-subtle)">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Pawffee</h5>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <li class="col-2 nav-item">
-                                <a class="nav-link" href="./menu.html">Menu</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/menu.html">Menu</a>
                             </li>
-                            <li class="col-2 nav-item">
-                                <a class="nav-link" href="./galeria.html">Anfitriones</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/galeria.html">Anfitriones</a>
                             </li>
-                            <li class="col-2 nav-item">
-                                <a class="nav-link active" aria-current="page" href="./tienda.html">Merch</a>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true" href="../pages/tienda.html">Merch</a>
                             </li>
-                            <li class="col-4 nav-item">
-                                <a class="nav-link" href="./reserva.html">Hace tu reserva</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/reserva.html">Hace tu reserva</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
     <footer class="footer">

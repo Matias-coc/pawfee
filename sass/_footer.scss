@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+.footer{
+    grid-row: 3 / 4;
+    padding: 1rem 2rem;
+    font-size: 2em;
+    color: v.$marron;
+    text-shadow: #3a2523 4px 2px 6px;
+    .redes{
+        gap: 1rem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        }
+    .au .der{
+        color: v.$marron;
+        text-align: center;
+        }
+    @include v.flex (row, space-around, center, nowrap);
+@include v.mobile {
+        .der, .au{
+        font-size: 1rem;
+        }
+
+        .redes {
+
+            .logo__ig,
+            .logo__fb,
+            .logo__x {
+                height: 20px;
+                width: auto;
+            }
+        }
+    }
+}
