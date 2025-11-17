@@ -61,29 +61,34 @@
     @include v.mobile{
         display: flex;
         flex-direction: column;
+        
         .sec__res{
             font-size: 0.7rem;
+            
         }
         .sec__for{
             font-size: 0.7rem;
+            padding: 0%;
             .for__res{
                 display: flex;
                 flex-direction: column;
-                padding: 40px;
+                
             }
         }
         .sec__info{
             font-size: 0.7rem;
+            padding: 0;
             iframe{
                 width: 320px;
                 height: auto;
+                
             }
             .div__info {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
-                padding: 20px;
+                
                 gap: 5px;
             } 
         }
