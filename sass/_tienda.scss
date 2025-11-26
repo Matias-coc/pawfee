@@ -1,1 +1,45 @@
 @use "variables" as v;
+
+.main__merch {
+    padding: 2rem;
+    text-align: center;
+
+    .merch__h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .merch__p {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .merch__productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .merch__item {
+        background: #fff;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0px 3px 10px rgba(0,0,0,0.12);
+
+        .merch__img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 0.7rem;
+        }
+
+        .merch__nombre {
+            margin-bottom: 0.3rem;
+        }
+
+        .merch__des {
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+    }
+}
