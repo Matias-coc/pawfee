@@ -32,12 +32,19 @@ body{
     justify-content: $justify;
     align-items: $aling;
     flex-wrap: $wrap;
-}
+};
 
 // MIXIN RESPONSIVE
+
+@mixin tablet{
+    @media (min-width: 431px) and (max-width: 968px){
+        @content;
+    }
+}
 
 @mixin mobile{
     @media (min-width:320px) and (max-width:430px){
         @content;
     }
 }
+
