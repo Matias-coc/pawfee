@@ -119,6 +119,9 @@ header .navbar .navbar-nav li a.nav-link {
   align-items: center;
   flex-wrap: nowrap;
 }
+.footer .whatsapp {
+  animation: whats 1.8s ease-in-out infinite;
+}
 @media (min-width: 320px) and (max-width: 430px) {
   .footer .der, .footer .au {
     font-size: 1rem;
@@ -129,8 +132,29 @@ header .navbar .navbar-nav li a.nav-link {
     height: 20px;
     width: auto;
   }
+  .footer .whatsapp {
+    height: 20px;
+    width: auto;
+  }
 }
 
+@keyframes whats {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .main__gal {
   grid-row: 2/3;
   background-color: #a5dfd7;
@@ -185,6 +209,7 @@ header .navbar .navbar-nav li a.nav-link {
 }
 
 .main__merch {
+  background-color: #a5dfd7;
   padding: 2rem;
   text-align: center;
 }
@@ -198,7 +223,7 @@ header .navbar .navbar-nav li a.nav-link {
 }
 .main__merch .merch__productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
 }

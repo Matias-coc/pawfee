@@ -17,6 +17,11 @@
         text-align: center;
         }
     @include v.flex (row, space-around, center, nowrap);
+
+    .whatsapp{
+        animation: whats 1.8s ease-in-out infinite;
+    }
+
 @include v.mobile {
         .der, .au{
         font-size: 1rem;
@@ -31,5 +36,29 @@
                 width: auto;
             }
         }
+
+        .whatsapp{
+            
+            height: 20px;
+            width: auto;
+        }
+    }
+}
+
+@keyframes whats {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    75%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
     }
 }

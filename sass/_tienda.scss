@@ -1,6 +1,7 @@
 @use "variables" as v;
 
 .main__merch {
+    background-color: v.$background;
     padding: 2rem;
     text-align: center;
 
@@ -16,7 +17,8 @@
 
     .merch__productos {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        
         gap: 1.5rem;
         padding: 1rem;
     }
