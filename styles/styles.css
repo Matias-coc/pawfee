@@ -120,6 +120,9 @@ header .navbar .navbar-nav li a.nav-link {
   flex-wrap: nowrap;
 }
 .footer .whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
   animation: whats 1.8s ease-in-out infinite;
 }
 @media (min-width: 320px) and (max-width: 430px) {
@@ -133,7 +136,7 @@ header .navbar .navbar-nav li a.nav-link {
     width: auto;
   }
   .footer .whatsapp {
-    height: 20px;
+    height: 35px;
     width: auto;
   }
 }

@@ -19,6 +19,9 @@
     @include v.flex (row, space-around, center, nowrap);
 
     .whatsapp{
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
         animation: whats 1.8s ease-in-out infinite;
     }
 
@@ -39,7 +42,7 @@
 
         .whatsapp{
             
-            height: 20px;
+            height: 35px;
             width: auto;
         }
     }
